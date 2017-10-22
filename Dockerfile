@@ -8,4 +8,7 @@ RUN apt-get install -y bash git nano gcc-multilib lib32stdc++-4.9-dev zlib1g-de$
 RUN pip3 install colorama prompt-toolkit pygments
 RUN pip3 install --user frida
 RUN npm install frida
+ADD frida-android-repinning_sa-1.js /root/frida-android-repinning_sa-1.js
+ADD burpca-cert-der.crt /root/burpca-cert-der.crt
+WORKDIR /root/
 ENTRYPOINT ["bash"]
