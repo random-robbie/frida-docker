@@ -18,9 +18,9 @@ RUN pip3 install frida
 RUN npm install frida
 
 #Install Adb 
-RUN mkdir -pm 0750 ~/.android $ANDROID_HOME \
-    && curl -fsSL https://dl.google.com/android/repository/platform-tools-latest-linux.zip \
-        -o /tmp/adb.zip ; unzip /tmp/adb.zip -d $ANDROID_HOME \
+RUN mkdir -pm 0750 ~/.android $ANDROID_HOME 
+RUN curl -fsSL https://dl.google.com/android/repository/platform-tools-latest-linux.zip -o /tmp/adb.zip
+RUN unzip /tmp/adb.zip -d $ANDROID_HOME 
         
 # Add Files        
 ADD frida-android-repinning_sa-1.js /root/frida-android-repinning_sa-1.js
