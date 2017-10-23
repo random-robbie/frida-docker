@@ -1,5 +1,7 @@
 FROM node:slim
 
+MAINTAINER random_robbie <txt3rob@gmail.com>
+
 #Set Env
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
