@@ -16,7 +16,11 @@ RUN apt-get upgrade -y
 
 #Install Frida
 RUN apt-get install -y unzip bash git nano gcc-multilib libstdc++6 zlib1g-dev lib32z1-dev python3 python3-dev python3-pip git autotools-dev automake apt-utils curl
+#Install Frida CLI tools
+RUN pip install frida-tools
+
 RUN pip3 install colorama prompt-toolkit pygments
+#Install Frida bindings
 RUN pip3 install frida
 RUN npm install frida
 
