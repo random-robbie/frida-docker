@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:19.9.0-slim
 
 MAINTAINER random_robbie <txt3rob@gmail.com>
 WORKDIR /root
