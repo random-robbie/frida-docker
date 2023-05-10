@@ -22,7 +22,7 @@ RUN pip install frida-tools
 RUN pip3 install colorama prompt-toolkit pygments
 #Install Frida bindings
 RUN pip3 install frida
-RUN npm install frida
+RUN npm install -g frida
 
 #Install Adb 
 RUN mkdir -pm 0750 ~/.android $ANDROID_HOME 
